@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  mlwebsite:
+    image: user/mlwebsite${TAG}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080"
