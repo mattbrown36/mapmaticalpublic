@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="The Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+</head>
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <div id="router-mount">
+    </div>
+    <script>
+        //This script fakes the login process, and then loads the app. Note that this only works when
+        //debugging as the controller we're accessing is conditionally compiled, and doesn't
+        //exist when we compile for production.
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+                if (xmlhttp.status != 200) {
+                    alert('Error faking login. Is the .net server running?');
+                }
+                else{
+                    //Load the app:
+                    var head = document.getElementsByTagName('head')[0],
+                    script = document.createElement('script');
+                    script.src = './mapmatical.bundle.js';
+                    head.appendChild(script);
+                }
+            }
+        };
+
+        xmlhttp.withCredentials = true;
+        xmlhttp.open("POST", "https://localhost:44361/Account/FakeLogin", true);
+        xmlhttp.send();
+    </script>
+</body>
+</html>
+
