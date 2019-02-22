@@ -1,0 +1,57 @@
+body {
+    background-color:#0100cc;
+}
+
+.background-image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-image-low-res {
+    transform: translate(0px,0px) scale(1);
+    z-index: -2;
+}
+
+.background-image-init {
+    transform-origin: 0% 0%;
+    transform: translate(0px,0px) scale(.2197265625);
+    z-index: -3;
+}
+
+.zoomaround {
+    animation-duration: 60s;
+    animation-name: zoomaround;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes zoomaround {
+    from {
+        transform: translate(0px,0px) scale(.2197265625);
+    }
+
+    16% {
+        transform: translate(-2400px,-2200px) scale(1.2); /*Wellund*/
+    }
+
+    33% {
+        transform: translate(-4200px,-2000px) scale(1.4); /*Mountains*/
+    }
+
+    55% {
+        transform: translate(-7100px,-6000px) scale(1.6); /*Border*/
+    }
+
+    75% {
+        transform: translate(-6800px,-4500px) scale(1.2); /*Shalmwood*/
+    }
+
+    to {
+        transform: translate(0px,0px) scale(.2197265625);
+    }
+}
+
+
+
