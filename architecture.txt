@@ -1,0 +1,17 @@
+
+
+mlDataService:
+We have a single relational database for holding centralized information. We access this
+database through entity framework. To allow our other services to access the database without
+worrying about whether they have the correct schema, we funnel all other access through an
+http api on the data server. The mlDataService consists of this API and the operations surrounding
+accessing the relational database.
+
+Additionally, as this is the only component in the system which is singular, we also cache
+configuration information and secrets on this server. As a result, all other services
+need only know the location of the mdDataService, and with that can grab all other
+configuration information that they need to know.
+
+For this reason, the server which mlDataService runs on must be locked down and only allowed to
+communicate within the local subnet.
+

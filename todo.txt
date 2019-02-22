@@ -1,0 +1,36 @@
+Immediate:
+-Port all logged in .net mvc html to frontend app html.
+-Recreate nav bar after login.
+-Allow nav bar to be hidden.
+-During debug, allow all actions to be used from other websites.
+-Create view of worlds you're allowed to join.
+-Start up multiverse when world selected.
+-Multiverse grabs redis file for google cloud storage.
+-Get frontend app going which connects to the multiverse container.
+
+
+
+
+Eventually:
+-Spruce up the front page.
+
+Redis bucket data:
+User redis data is contained in a folder named userid-<RandomGuid>. The name of this folder is stored in the SQL database.
+-Every 5 minutes redis data should be pushed to the backup files current-1 and current-2.
+We do it twice in case a transaction to one of them fails.
+Before and after we write any of the files, we write a random value to <filename>-start and <filename>-end.
+If the values in these files don't match, then we know that there was a write failure, and that we should try the other file.
+After we write to the current files, we get a list of all files in the bucket.
+We should see something like:
+hour-next-<DATE>
+hour-<DATE>
+week-next-<DATE>
+week-<DATE>
+month-next-<DATE>
+month-<DATE>
+
+When we write to current, if hour-next doesn't exist, then we duplicate current as hour-next.
+If hour-next is at least an hour old, we delete the existing hour and rename it to hour.
+At that time, if week-next doesn't exist, we also copy it to week-next, and move down the
+line in this fashion.
+
