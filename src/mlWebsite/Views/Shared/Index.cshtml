@@ -1,0 +1,156 @@
+﻿@model RegisterViewModel
+@section head {
+    <link rel="stylesheet" href="~/css/splash.css" />
+}
+
+@section prebootstrap {
+    <div class="background-image-container" id="map-holder">
+        <!-- Replaced with a high res image using a script below.-->
+        <img class="background-image-low-res" id="low-res-map" src="https://storage.googleapis.com/mapmatical.appspot.com/Dnd-Map-low-res.jpg" />
+    </div>
+}
+
+<div class="row margin-from-nav show-map-picture">
+    <div class="col-lg-9 col-md-6 col-xs-3">
+    </div>
+    <div class="col-lg-3 col-md-6 col-xs-9">
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading no-padding">
+                    <ul class="nav nav-tabs nav-tabs-in-header nav-justified nav-tabs-justified" role="tablist">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#signup" data-toggle="tab" role="tab">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-toggle="tab" role="tab">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing" data-toggle="tab" role="tab">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="col-lg-12">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="signup" role="tabpanel">
+                                <form asp-controller="Account" asp-action="RegisterOrLogin" asp-route-returnurl="/" method="post" class="form-horizontal">
+                                    <div class="row">
+                                        <label asp-for="Email" class="col-lg-2 control-label">Email:</label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-11">
+                                            <input asp-for="Email" class="form-control" tabindex="1"/>
+                                            <span asp-validation-for="Email" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <label asp-for="Password" control-label">Password:</label>
+                                            <a href="/Account/ForgotPassword" tabindex="6">Forgot?</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-11">
+                                            <input asp-for="Password" class="form-control" tabindex="2" />
+                                            <span asp-validation-for="Password" class="text-danger"></span>
+                                            <hr />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label asp-for="ConfirmPassword" class="col-lg-2 no-padding-top control-label multi-word-label">Confirm Password:</label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-11">
+                                            <input asp-for="ConfirmPassword" class="form-control confirm-pass-input" tabindex="3"/>
+                                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div asp-validation-summary="All" class="text-danger"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-5 col-xs-3">
+                                            <button type="submit" class="btn btn-default" tabindex="4">Sign Up!</button>
+                                        </div>
+                                        <div class="col-xs-1">
+                                            _
+                                            <div class="ext-login-divider">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <button type="submit" class="btn btn-default" tabindex="5">Login</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="row">
+                                    <hr />
+                                    <div class="ext-login-float">
+                                        Or Login With:
+                                    </div>
+                                    <form asp-controller="Account" asp-action="ExternalLogin" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="google-form">
+                                        <button type="submit" class="login-inner-button" name="provider" value="Google" title="Log in using your Google account" tabindex="7">
+                                            <img src="/images/google.png" class="login-inner-image"/>
+                                        </button>
+                                    </form>
+                                    <div class="ext-login-float">|</div>
+                                    <form asp-controller="Account" asp-action="ExternalLogin" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="facebook-form">
+                                        <button type="submit" class="login-inner-button" name="provider" value="Facebook" title="Log in using your facebook account" tabindex="8">
+                                            <img src="/images/facebook.png" class="login-inner-image"/>
+                                        </button>
+                                    </form>
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane" id="about" role="tabpanel">
+                                <h3 class="panel-title">What is Mapmatical?</h3>
+                                <hr />
+                                Mapmatical will be an online application for building
+                                fictional worlds. The target audience includes writers, artists, game-masters,
+                                or anyone else who loves world-building just for the fun of it.
+                                <br /><br />
+                                You'll be able to keep your worlds to yourself, share them with others,
+                                or even allow others to help you build your worlds in real time.
+                                <br /><br />
+                                If you're interested in keeping tabs on the development of Mapmatical, you can
+                                <a href="https://mapmatical.tumblr.com/post/155316640638/why-build-mapmatical" target="_blank">
+                                    follow it on the blog.
+                                </a>
+                            </div>
+                            <div class="tab-pane" id="pricing" role="tabpanel">
+                                <h3 class="panel-title">Planned Pricing</h3>
+                                <hr />
+                                Mapmatical is currently "pre-Alpha". This means that it
+                                is not yet ready for any sort of release. When the project
+                                hits the "Alpha" phase, a limited number of users will
+                                be allowed preview access for something like $5/month. This will likely
+                                occur in phases, with first 10, 100, and then 1000 users.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section scripts {
+    <script>
+        $(function () {
+            setTimeout(function () {
+                var highResBackground = $('<img id="high-res-map" class="background-image-init" src="https://storage.googleapis.com/mapmatical.appspot.com/Dnd-Map.jpg" />');
+                highResBackground.load(function () {
+                    setTimeout(function () {
+                        $('#low-res-map').remove();
+                        setTimeout(function () {
+                            $('#high-res-map').addClass('zoomaround');
+                        }, 2000);
+                    }, 500);
+                });
+                $("#map-holder").append(highResBackground);
+            }, 500);
+        });
+    </script>
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
