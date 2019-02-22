@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo1.svg"
+   inkscape:export-filename="C:\Users\casey\Documents\GitHub\mapmatical\logo16.png"
+   inkscape:export-xdpi="2.8144848"
+   inkscape:export-ydpi="2.8144848">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="194.31317"
+     inkscape:cy="770.67954"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1536"
+     inkscape:window-height="801"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       inkscape:groupmode="layer"
+       id="layer2"
+       inkscape:label="Layer 2"
+       style="display:inline">
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path4160"
+         cx="260.05847"
+         cy="258.01935"
+         r="124.72005" />
+    </g>
+    <path
+       sodipodi:type="star"
+       style="fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4136"
+       sodipodi:sides="8"
+       sodipodi:cx="277.14285"
+       sodipodi:cy="343.79077"
+       sodipodi:r1="255.82201"
+       sodipodi:r2="76.746605"
+       sodipodi:arg1="1.2172544"
+       sodipodi:arg2="1.6099535"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 365.71427,583.79078 274.13844,420.47855 170.06667,576.12585 220.79197,395.89278 37.142848,432.36219 200.45508,340.78636 44.807769,236.71459 225.04085,287.43989 188.57143,103.79077 280.14726,267.103 384.21903,111.45569 333.49374,291.68877 517.14286,255.21935 353.83063,346.79518 509.47794,450.86695 329.24486,400.14166 Z"
+       transform="matrix(0.90630778,-0.42261827,0.42261827,0.90630778,-138.7547,62.764721)" />
+    <path
+       sodipodi:type="star"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4136-4"
+       sodipodi:sides="8"
+       sodipodi:cx="277.14285"
+       sodipodi:cy="343.79077"
+       sodipodi:r1="255.82201"
+       sodipodi:r2="76.746605"
+       sodipodi:arg1="1.2172544"
+       sodipodi:arg2="1.6099535"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 365.71427,583.79078 274.13844,420.47855 170.06667,576.12585 220.79197,395.89278 37.142848,432.36219 200.45508,340.78636 44.807769,236.71459 225.04085,287.43989 188.57143,103.79077 280.14726,267.103 384.21903,111.45569 333.49374,291.68877 517.14286,255.21935 353.83063,346.79518 509.47794,450.86695 329.24486,400.14166 Z"
+       transform="matrix(0.66069837,-0.30808872,0.30808872,0.66069837,-33.025933,113.74764)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:142.96524048px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="177.49547"
+       y="327.94727"
+       id="text4162"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0753383,0.9299399)"><tspan
+         sodipodi:role="line"
+         id="tspan4164"
+         x="177.49547"
+         y="327.94727">M</tspan></text>
+  </g>
+</svg>
