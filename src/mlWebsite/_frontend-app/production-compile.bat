@@ -1,0 +1,1 @@
+webpack --progress --colors --watch --display-error-details
