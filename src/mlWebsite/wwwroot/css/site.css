@@ -1,0 +1,281 @@
+body {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color:honeydew;
+    font-family: serif;
+    font-size: 16px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top : 50px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 400px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* buttons and links extension to use brackets: [ click me ] */
+.btn-bracketed::before {
+    display:inline-block;
+    content: "[";
+    padding-right: 0.5em;
+}
+.btn-bracketed::after {
+    display:inline-block;
+    content: "]";
+    padding-left: 0.5em;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+  /* Hide captions */
+  .carousel-caption {
+    display: none
+  }
+}
+
+	
+/* navbar */
+.navbar-default {
+    background-color: maroon;
+    border-color: cadetblue;
+    border-width: 1px;
+    border-left-width: 0;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: azure;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: silver;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    text-shadow : 1px 1px 3px darkblue;
+    font-weight:bold;
+    color: floralwhite;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: silver;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+
+.panel-default {
+    border-color: cadetblue;
+    border-width: 1px;
+    background-color: rgb(0, 102, 101);
+    color: azure;
+    text-shadow: 1px 1px 5px black;
+}
+
+.panel-default > .panel-heading {
+    background-image: none;
+    background-color: maroon;
+    border-color: darkslategrey;
+    border-width: 2px;
+    text-shadow : 1px 1px 3px black;
+    color: floralwhite;
+}
+
+.well-close {
+    padding : 3px 3px 3px 3px
+}
+
+.limit{
+        overflow: hidden;
+     }
+.limit img{
+   width: 100%;
+   height: 100%;
+}
+
+.margin-from-nav {
+    margin:20px;
+}
+.primary-bullet-list {
+    padding-left:15px;
+}
+
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus{
+    color:floralwhite;
+    background-color:maroon;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    font-weight:bold;
+}
+
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+    color: ivory;
+    cursor: default;
+    background-color: brown;
+    border: 1px solid #ddd;
+    border-bottom-color: black;
+}
+
+.nav-tabs > li.active > a:hover {
+    color: ivory;
+    cursor: default;
+    background-color: brown;
+    border: 1px solid #ddd;
+    border-bottom-color: black;
+}
+
+.nav-tabs > li > a {
+    color: floralwhite;
+    background-color: #5e0000;
+    border: 1px solid cadetblue;
+    border-bottom-color: darkslategrey;
+}
+
+.nav-tabs-in-header {
+    border-bottom-width: 0;
+}
+
+a {
+    color:deepskyblue;
+}
+
+a.hover {
+    color:darkblue;
+}
+
+.confirm-pass-input {
+    margin-top: 5px;
+}
+
+.no-padding {
+    padding : 0 0 0 0;
+}
+
+@media (min-width: 768px) {
+    .no-padding-top {
+        padding-top : 0;
+    }
+}
+
+.btn {
+    font-size:16px;
+    border: 2px solid cadetblue;
+}
+
+.btn-default {
+    color: azure;
+    background-color: #003a39;
+    text-shadow: 1px 1px 3px black;
+}
+
+.multi-word-label {
+    width: auto;
+}
+
+@media (max-width: 1199px) {
+    .ext-login-divider {
+        display: none;
+    }
+}
+
+.google-button {
+    margin-left:15px;
+    padding: 0 0 0 0;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    color: #c1e2ff ;
+}
+
+.ext-login-float {
+    float: left;
+}
+
+.facebook-form {
+    float: left;
+    padding: 0 0 0 0;
+    margin-left: 7px;
+    margin-right: 10px;
+}
+
+.google-form {
+    float: left;
+    padding: 0 0 0 0;
+    margin-left: 10px;
+    margin-right: 7px;
+}
+
+.login-inner-button {
+    padding: 0 0 0 0;
+    border: 0 0 0 0
+}
+
+.login-inner-button {
+    margin: 0 0 0 0;
+    border: 0 0 0 0
+}
+
+
