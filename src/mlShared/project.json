@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0-*",
+  "userSecretsId": "mapmatical-72DFF623-2020-4C06-BE25-73DA49866240",
+  "dependencies": {
+    "Newtonsoft.Json": "9.0.1",
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "1.1.0",
+    "Microsoft.EntityFrameworkCore": "1.1.0",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
+    "Microsoft.EntityFrameworkCore.Design": "1.1.0",
+    "NETStandard.Library": "1.6.1",
+    "Pomelo.EntityFrameworkCore.MySql": "1.1.0",
+    "MySqlConnector": "0.9.2",
+    "Google.Apis.Container.v1": "1.20.0.476",
+    "Google.Cloud.Storage.V1": "1.0.0-beta06"
+  },
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  },
+  "tools": {
+    "Microsoft.Extensions.SecretManager.Tools": "1.1.0-preview4-final",
+    "Microsoft.EntityFrameworkCore.Tools": "1.1.0-preview4-final",
+    "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.1.0-preview4-final"
+  }
+}
