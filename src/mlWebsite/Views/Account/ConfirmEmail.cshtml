@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Confirm Email";
+}
+
+<h2>@ViewData["Title"].</h2>
+<div>
+    <p>
+        Thank you for confirming your email. Waiting 5 seconds and then redirecting to the home page.
+    </p>
+</div>
+
+@section scripts {
+    <script>
+        setTimeout(function () {
+            window.location.replace('/');
+        } ,5000);
+    </script>
+}
+
+
